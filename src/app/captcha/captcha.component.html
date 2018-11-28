@@ -1,0 +1,22 @@
+<div class="not-a-robot" *ngIf="!started">
+  <mat-checkbox (click)="start()">Eu não sou um robô</mat-checkbox>
+</div>
+
+<mat-card style="width: 400px" *ngIf="started">
+  <mat-card-content>
+    <div class="primary captcha-title">
+      <span [innerHTML]="title"></span>
+    </div>
+
+    <mat-grid-list [cols]="numberOfColumns" rowHeight="1:1">
+      <mat-grid-tile *ngFor="let tile of tiles"
+        [ngClass]="{ 'selected': isChecked(tile) }"
+        (click)="toggle(tile)">
+        <img src="../../assets/images/tiles/{{ tile + 1}}.png">
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card-content>
+  <mat-card-actions style="text-align: right">
+    <button mat-flat-button color="primary" (click)="validate()">Validar</button>
+  </mat-card-actions>
+</mat-card>

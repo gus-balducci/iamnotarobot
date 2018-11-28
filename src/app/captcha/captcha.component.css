@@ -1,0 +1,32 @@
+.not-a-robot {
+    max-width: 280px;
+    background-color: #eee;
+    border: solid 1px darkgray;
+    padding: 1.5em 1em;
+    margin: 1em 0;
+}
+
+mat-grid-tile img {
+    width: 100%;
+}
+
+mat-grid-tile.selected {
+    background-color: #3f51b5;
+}
+
+mat-grid-tile.selected img {
+    width: 80%;
+}
+
+.primary {
+    background-color: #3f51b5;
+    color: #fff;
+}
+
+.captcha-title {
+    margin: 5px 0;
+    padding: 10px;
+    font: Roboto,"Helvetica Neue",sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}

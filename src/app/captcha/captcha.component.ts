@@ -14,7 +14,7 @@ interface IConfig {
 export class CaptchaComponent implements OnInit {
 
   started: boolean = false;
-  configUrl: string = '../../assets/config.json';
+  configUrl: string = 'assets/config.json';
   titles: string[] = [];
   tiles: number[];
   tilesPerPage: number = 16;

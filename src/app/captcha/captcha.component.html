@@ -12,7 +12,7 @@
       <mat-grid-tile *ngFor="let tile of tiles"
         [ngClass]="{ 'selected': isChecked(tile) }"
         (click)="toggle(tile)">
-        <img src="../../assets/images/tiles/{{ tile + 1}}.png">
+        <img src="assets/images/tiles/{{ tile + 1}}.png">
       </mat-grid-tile>
     </mat-grid-list>
   </mat-card-content>

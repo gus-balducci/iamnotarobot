@@ -1,10 +1,16 @@
 {
     "tilesPerPage": 9,
-    "titles": [
+    "projectTitle": "Este é o <strong>CAPTCHA</strong>, Teste de Turing Público Completamente Automatizado para diferenciação entre Computadores e Humanos",
+    "startMessage": "Você compromete-se a ajudar esta máquina em sua busca por humanização e aprendizagem?",
+    "startButtonText": "Não sou um robô",
+    "captchaTitles": [
         "selecione todas as imagens exibindo<br><strong>pessoas</strong>",
         "selecione todas as imagens exibindo<br><strong>seres humanos</strong>",
         "selecione todas as imagens exibindo<br><strong>carrinhos de supermercado</strong>",
         "selecione todas as imagens exibindo<br><strong>exemplos</strong>",
         "selecione todas as imagens exibindo<br><strong>qualquer coisa</strong>"
-    ]
+    ],
+    "validateCaptchaButtonText": "Validar",
+    "endMessage": "Suas respostas já foram computadas. Convide um novo humano para colaborar.",
+    "restartButtonText": "Voltar ao início"
 }

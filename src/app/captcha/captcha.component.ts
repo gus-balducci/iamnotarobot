@@ -3,7 +3,13 @@ import { HttpClient } from '@angular/common/http';
 
 interface IConfig {
   tilesPerPage: number,
-  titles: string[]
+  projectTitle: string,
+  startMessage: string,
+  startButtonText: string,
+  captchaTitles: string[],
+  validateCaptchaButtonText: string,
+  endMessage: string,
+  restartButtonText: string
 }
 
 @Component({
@@ -13,7 +19,15 @@ interface IConfig {
 })
 export class CaptchaComponent implements OnInit {
 
+  projectTitle: string = "Carregando...";
+  startMessage: string;
+  startButtonText: string;
+  validateCaptchaButtonText: string;
+  endMessage: string;
+  restartButtonText: string;
+
   started: boolean = false;
+  ended: boolean = false;
   configUrl: string = 'assets/config.json';
   titles: string[] = [];
   tiles: number[];
@@ -40,7 +54,14 @@ export class CaptchaComponent implements OnInit {
   fetchTitles() {
     this.http.get<IConfig>(this.configUrl).subscribe(config => {
       this.tilesPerPage = config.tilesPerPage;
-      this.titles = config.titles;
+      this.titles = config.captchaTitles;
+
+      this.projectTitle = config.projectTitle;
+      this.startMessage = config.startMessage;
+      this.startButtonText = config.startButtonText;
+      this.validateCaptchaButtonText = config.validateCaptchaButtonText;
+      this.endMessage = config.endMessage;
+      this.restartButtonText = config.restartButtonText;
 
       this.init();
     });
@@ -53,6 +74,12 @@ export class CaptchaComponent implements OnInit {
     }, 500);
   }
 
+  reset() {
+    this.started = false;
+    this.ended = false;
+    this.init();
+  }
+
   init() {
     this.tiles = Array(this.tilesPerPage).fill(0).map((el, i) => i);
     this.checkedTiles = Array(this.tilesPerPage).fill(false);
@@ -61,8 +88,7 @@ export class CaptchaComponent implements OnInit {
   next() {
     var page = this.tiles[0] / this.tilesPerPage + 1;
     if (page >= this.titles.length) {
-      // fim de jogo
-      alert('fim');
+      this.ended = true;
     } else {
       this.tiles = this.tiles.map(el => el + this.tilesPerPage);
       this.checkedTiles.fill(false);

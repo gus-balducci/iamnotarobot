@@ -1,8 +1,16 @@
-<div class="not-a-robot" *ngIf="!started">
-  <mat-checkbox (click)="start()">Eu não sou um robô</mat-checkbox>
-</div>
+<mat-card class="inicio primary" *ngIf="!(started || ended)">
+  <mat-card-content class="text-center" style="margin-top: 4rem;">
+    <span style="font-size: 24px" [innerHTML]="projectTitle"></span>
+  </mat-card-content>
+  <mat-card-actions>
+    <p [innerHTML]="startMessage" style="margin: 16px 8px;"></p>
+    <div class="not-a-robot">
+      <mat-checkbox (click)="start()">{{ startButtonText }}</mat-checkbox>
+    </div>
+  </mat-card-actions>
+</mat-card>
 
-<mat-card style="width: 400px" *ngIf="started">
+<mat-card *ngIf="started && ! ended" class="captcha">
   <mat-card-content>
     <div class="primary captcha-title">
       <span [innerHTML]="title"></span>
@@ -12,11 +20,20 @@
       <mat-grid-tile *ngFor="let tile of tiles"
         [ngClass]="{ 'selected': isChecked(tile) }"
         (click)="toggle(tile)">
-        <img src="assets/images/tiles/{{ tile + 1}}.png">
+        <img src="assets/images/tiles/{{ tile + 1 }}.jpeg">
       </mat-grid-tile>
     </mat-grid-list>
   </mat-card-content>
   <mat-card-actions style="text-align: right">
-    <button mat-flat-button color="primary" (click)="validate()">Validar</button>
+    <button mat-flat-button color="primary" (click)="validate()">{{ validateCaptchaButtonText }}</button>
+  </mat-card-actions>
+</mat-card>
+
+<mat-card class="fim primary" *ngIf="ended">
+  <mat-card-actions>
+    <p [innerHTML]="endMessage" style="margin: 16px 8px;"></p>
+    <div class="not-a-robot">
+      <mat-checkbox (click)="reset()">{{ restartButtonText }}</mat-checkbox>
+    </div>
   </mat-card-actions>
 </mat-card>

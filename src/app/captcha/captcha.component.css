@@ -1,9 +1,47 @@
+.mat-card {
+    /* font: Roboto,"Helvetica Neue",sans-serif; */
+    margin: 2em auto;
+    max-width: 400px;
+    min-height: 545px;
+}
+
+.inicio h1,
+.fim h1 {
+    text-align: center;
+}
+
+.inicio div.mat-card-header-text {
+    margin: 0 0 !important;
+}
+
+mat-card-content.v-center {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    right: 16px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+}
+
+.inicio mat-card-actions,
+.captcha mat-card-actions,
+.fim mat-card-actions {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    right: 16px;
+}
+
+.captcha mat-card-actions {
+    margin: 0;
+}
+
 .not-a-robot {
-    max-width: 280px;
     background-color: #eee;
+    color: rgba(0,0,0,.87);
     border: solid 1px darkgray;
-    padding: 1.5em 1em;
-    margin: 1em 0;
+    padding: 1em;
+    margin: 8px;
 }
 
 mat-grid-tile img {

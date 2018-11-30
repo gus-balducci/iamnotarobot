@@ -11,7 +11,7 @@
         "selecione todas as imagens exibindo<br><strong>qualquer coisa</strong>"
     ],
     "validateCaptchaButtonText": "Validar",
-    "endTitle": "Suas respostas já foram computadas. Convide um novo humano para colaborar.",
+    "endTitle": "Suas respostas já foram computadas.<br>Convide um novo humano para colaborar.",
     "endMessage": "Você não é mesmo um robô?",
     "restartButtonText": "Voltar ao início"
 }

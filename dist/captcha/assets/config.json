@@ -4,11 +4,38 @@
     "startMessage": "Você compromete-se a ajudar esta máquina em sua busca por humanização e aprendizagem?",
     "startButtonText": "Não sou um robô",
     "captchaTitles": [
-        "Selecione todas as imagens exibindo<br><strong>blablabla</strong>",
-        "Selecione todas as imagens exibindo<br><strong>seres humanos</strong>",
-        "Selecione todas as imagens exibindo<br><strong>carrinhos de supermercado</strong>",
-        "Selecione todas as imagens exibindo<br><strong>exemplos</strong>",
-        "Selecione todas as imagens exibindo<br><strong>qualquer coisa</strong>"
+        "Selecione todas as imagens exibindo<br><strong>propaganda</strong>",
+        "Selecione todas as imagens exibindo<br><strong>orelhões públicos</strong>",
+        "Selecione todas as imagens exibindo<br><strong>policiais</strong>",
+        "Selecione todas as imagens exibindo<br><strong>a mesma pessoa</strong>",
+        "Selecione todas as imagens exibindo<br><strong>pessoas cometendo crimes</strong>"
+      "Selecione todas as imagens exibindo<br><strong>carros de luxo</strong>"
+      "Selecione todas as imagens exibindo<br><strong>moradores de rua</strong>"
+      "Selecione todas as imagens exibindo<br><strong>mães e filhos não acompanhados pelo pai</strong>"
+      "Selecione todas as imagens exibindo<br><strong>pessoas dormindo</strong>"
+      "Selecione todas as imagens exibindo<br><strong>homens-placa</strong>"
+      "Selecione todas as imagens exibindo<br><strong>arte</strong>"
+      "Selecione todas as imagens exibindo<br><strong>casas</strong>"
+      "Selecione todas as imagens exibindo<br><strong>crianças</strong>"
+      "Selecione todas as imagens exibindo<br><strong>pessoas com seus animais</strong>"
+      "Selecione todas as imagens exibindo<br><strong>animais abandonados</strong>"
+      "Selecione todas as imagens exibindo<br><strong>carrinhos de supermercado</strong>"
+      "Selecione todas as imagens exibindo<br><strong>propaganda política</strong>"
+      "Selecione todas as imagens exibindo<br><strong>carroceiros</strong>"
+      "Selecione todas as imagens exibindo<br><strong>lixo</strong>"
+      "Selecione todas as imagens exibindo<br><strong>algo de errado</strong>"
+      "Selecione todas as imagens exibindo<br><strong>vendedores ambulantes</strong>"
+      "Selecione todas as imagens exibindo<br><strong>pessoas interagindo com a câmera</strong>"
+      "Selecione todas as imagens exibindo<br><strong>pessoas trabalhando</strong>"
+      "Selecione todas as imagens exibindo<br><strong>faces de prédio sem janela</strong>"
+      "Selecione todas as imagens exibindo<br><strong>sombra do veículo de captura</strong>"
+      "Selecione todas as imagens exibindo<br><strong>ciclofaixa</strong>"
+      "Selecione todas as imagens exibindo<br><strong>pessoas com deficiência</strong>"
+            "Selecione todas as imagens exibindo<br><strong>casas irregulares</strong>"
+            "Selecione todas as imagens exibindo<br><strong>grafites</strong>"
+            "Selecione todas as imagens exibindo<br><strong>ocupações</strong>"
+            "Selecione todas as imagens exibindo<br><strong>pessoas</strong>"
+
     ],
     "validateCaptchaButtonText": "Validar",
     "endTitle": "Suas respostas já foram computadas. Convide um novo humano para colaborar.",

@@ -82,7 +82,7 @@ export class CaptchaComponent implements OnInit {
       this.started = false;
       this.ended = false;
       this.init();
-    });
+    }, 500);
   }
 
   init() {

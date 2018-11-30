@@ -266,7 +266,7 @@ Apache-2.0
 @angular/core
 MIT
 
-@angular/cdk
+@angular/material
 MIT
 The MIT License
 
@@ -294,13 +294,7 @@ THE SOFTWARE.
 @angular/common
 MIT
 
-@angular/platform-browser
-MIT
-
-@angular/forms
-MIT
-
-@angular/material
+@angular/cdk
 MIT
 The MIT License
 
@@ -325,14 +319,20 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
+@angular/platform-browser
+MIT
+
+@angular/material/card
+
+@angular/forms
+MIT
+
 @angular/animations
 MIT
 
 @angular/material/checkbox
 
 @angular/material/grid-list
-
-@angular/material/card
 
 @angular/material/button
 

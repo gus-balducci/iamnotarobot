@@ -4,11 +4,11 @@
     "startMessage": "Você compromete-se a ajudar esta máquina em sua busca por humanização e aprendizagem?",
     "startButtonText": "Não sou um robô",
     "captchaTitles": [
-        "selecione todas as imagens exibindo<br><strong>blablabla</strong>",
-        "selecione todas as imagens exibindo<br><strong>seres humanos</strong>",
-        "selecione todas as imagens exibindo<br><strong>carrinhos de supermercado</strong>",
-        "selecione todas as imagens exibindo<br><strong>exemplos</strong>",
-        "selecione todas as imagens exibindo<br><strong>qualquer coisa</strong>"
+        "Selecione todas as imagens exibindo<br><strong>blablabla</strong>",
+        "Selecione todas as imagens exibindo<br><strong>seres humanos</strong>",
+        "Selecione todas as imagens exibindo<br><strong>carrinhos de supermercado</strong>",
+        "Selecione todas as imagens exibindo<br><strong>exemplos</strong>",
+        "Selecione todas as imagens exibindo<br><strong>qualquer coisa</strong>"
     ],
     "validateCaptchaButtonText": "Validar",
     "endTitle": "Suas respostas já foram computadas. Convide um novo humano para colaborar.",

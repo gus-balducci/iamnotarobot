@@ -30,6 +30,9 @@
 </mat-card>
 
 <mat-card class="fim primary" *ngIf="ended">
+  <mat-card-content class="text-center" style="margin-top: 4rem;">
+    <span style="font-size: 24px" [innerHTML]="endTitle"></span>
+  </mat-card-content>
   <mat-card-actions>
     <p [innerHTML]="endMessage" style="margin: 16px 8px;"></p>
     <div class="not-a-robot">

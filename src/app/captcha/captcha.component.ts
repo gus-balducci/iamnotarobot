@@ -8,6 +8,7 @@ interface IConfig {
   startButtonText: string,
   captchaTitles: string[],
   validateCaptchaButtonText: string,
+  endTitle: string,
   endMessage: string,
   restartButtonText: string
 }
@@ -23,6 +24,7 @@ export class CaptchaComponent implements OnInit {
   startMessage: string;
   startButtonText: string;
   validateCaptchaButtonText: string;
+  endTitle: string;
   endMessage: string;
   restartButtonText: string;
 
@@ -60,6 +62,7 @@ export class CaptchaComponent implements OnInit {
       this.startMessage = config.startMessage;
       this.startButtonText = config.startButtonText;
       this.validateCaptchaButtonText = config.validateCaptchaButtonText;
+      this.endTitle = config.endTitle;
       this.endMessage = config.endMessage;
       this.restartButtonText = config.restartButtonText;
 
@@ -75,9 +78,11 @@ export class CaptchaComponent implements OnInit {
   }
 
   reset() {
-    this.started = false;
-    this.ended = false;
-    this.init();
+    setTimeout(() => {
+      this.started = false;
+      this.ended = false;
+      this.init();
+    });
   }
 
   init() {
